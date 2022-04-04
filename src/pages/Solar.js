@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 function Solar() {
   return (
     <Layout>
-     Solar
+     Solar test
     </Layout>
   )
 }
