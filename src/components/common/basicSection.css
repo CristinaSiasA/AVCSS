@@ -1,0 +1,5 @@
+.section__container{
+    height: 100vh;
+    display: flex;
+    background-color: #4cb269;
+}
