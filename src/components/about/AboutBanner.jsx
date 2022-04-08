@@ -1,7 +1,6 @@
 import React from 'react';
-import My_Carousel from "../common/Carousel";
 
-const Banner = () => {
+const AboutBanner = () => {
     return (
         <div className="banner">
 
@@ -9,4 +8,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default AboutBanner;

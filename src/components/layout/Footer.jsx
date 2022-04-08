@@ -1,6 +1,5 @@
 import React from 'react';
 import './layout.css';
-import { Button } from '../common/Button';
 import { Link } from 'react-router-dom';
 import Logo_NCI from '../../assets/images/NCI_Logo_white.png'
 

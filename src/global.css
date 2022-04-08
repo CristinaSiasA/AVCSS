@@ -15,6 +15,7 @@
     --custom-light-blue:#68c2c2;
     --custom-light-gray:#ebeae6;
     --custom-dark-gray:#333333;
+    --custom-dark-green:#005051;
 
     --font-family: 'Manrope', sans-serif;
 
@@ -35,6 +36,10 @@ h1 {
     margin: 2rem 1rem;
 }
 
+.style-titles{
+    text-shadow: 1px 1px 2px #242222;
+    letter-spacing: .1rem;;
+}
 
 .Green_gradient_bg{
     /* ff 3.6+ */

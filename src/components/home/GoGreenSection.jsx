@@ -2,7 +2,6 @@ import React from 'react';
 import './goGreenSection.css';
 import BasicSection from '../common/BasicSection';
 import PlanetImage from '../../assets/images/planet.png'
-import Container from 'react-bootstrap/Container';
 
 
 function GoGreenSection() {
@@ -17,8 +16,6 @@ function GoGreenSection() {
                 buttonStyle={"btn--secondary btn--large buttons"}
                 url={"/education"}
             />
-
-
         </div>
     );
 }

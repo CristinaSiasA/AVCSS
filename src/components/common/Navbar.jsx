@@ -73,7 +73,7 @@ function MainMenu() {
                             </Link>
                         </li>
                     </ul>
-                    <NewButton buttonStyle='my-btn my-btn--primary my-btn--medium' url={'/quote'}>Request a Quote</NewButton>}
+                    <NewButton buttonStyle='my-btn my-btn--primary my-btn--medium no-display-btn' url={'/quote'}>Request a Quote</NewButton>}
                 </div>
             </nav>
         </>
