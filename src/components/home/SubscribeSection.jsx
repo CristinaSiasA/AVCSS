@@ -1,4 +1,3 @@
-import {Button} from "../common/Button";
 import React from "react";
 import './subscribeSection.css'
 
@@ -19,7 +18,7 @@ function SubscribeSection (){
                 type='email'
                 placeholder='Your Email'
             />
-          <Button buttonStyle='btn--outline--white'>Subscribe</Button>
+            <button type="submit" className="btn btn-outline-light btn-lg">Subscribe</button>
         </form>
     </div>
 </section>

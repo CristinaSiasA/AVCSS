@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import "./navbar.css"
 import logo from '../../assets/images/logo.png'
-import { Button } from './Button';
+import NewButton from './NewButton';
 
 function MainMenu() {
     const [click, setClick] = useState(false);
@@ -73,7 +73,7 @@ function MainMenu() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--primary' >Request a Quote</Button>}
+                    <NewButton buttonStyle='my-btn my-btn--primary my-btn--medium' url={'/quote'}>Request a Quote</NewButton>}
                 </div>
             </nav>
         </>

@@ -1,5 +1,38 @@
-.section__container{
-    height: 100vh;
+.section_container{
+    height: 100%;
+    width: 100%;
     display: flex;
-    background-color: #4cb269;
+    align-items: stretch;
+    padding: 20px;
+    background-color: #68c2c2;
+}
+
+.section_image{
+    width:1000px;
+    padding: 50px;
+}
+.main_image{
+    width: 100%;
+}
+
+.section_content{
+    padding: 50px;
+    background-color: var(--custom-light-gray);
+    margin:auto;
+}
+.section_content h5{
+    font-size: 30px;
+}
+.section_content h1{
+    font-size: 40px!important;
+}
+.section_content p{
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.section_content div{
+    text-align: center;
+    margin-top: 50px;
+
 }

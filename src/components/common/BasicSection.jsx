@@ -1,24 +1,28 @@
 import React from 'react';
-import {Button} from './Button'
-import { Link } from 'react-router-dom';
+import NewButton from "./NewButton";
+import './basicSection.css'
 
 
-function BasicSection({src,title,text,path,subtitle}) {
+function BasicSection({src, title, text, url, subtitle,buttonStyle,children}) {
     return (
-            <div className='section__container'>
-                <div>
-                    <img className='section_image'
-                            alt='ImageSection'
-                            src={src}
-                        />
-                    <div className='section_content'>
-                        <h5 className='section_subtitle'>{title}</h5>
-                        <h1 className='section_title'>{subtitle}</h1>
-                        <p className="section_text">{text}</p>
-                        <Link className='Call_to_Action' to={path}>{Button} </Link>
+        <div className='className="container"'>
+            <div  className='section_image'>
+                <img className="main_image"
+                     alt='ImageSection'
+                     src={src}
+                />
+            </div>
+                <div className='section_content'>
+                    <h5 className='section_subtitle'>{title}</h5>
+                    <h1 className='section_title'>{subtitle}</h1>
+                    <p className="section_text">{text}</p>
+                    <div>
+                        <NewButton buttonStyle={buttonStyle} url={url} children={children}/>
                     </div>
                 </div>
-            </div>
+
+        </div>
     );
 }
+
 export default BasicSection;
