@@ -1,5 +1,5 @@
 import React from 'react';
-import NewButton from "./NewButton";
+import Button from "./Button";
 import './basicSection.css'
 
 
@@ -17,7 +17,7 @@ function BasicSection({src, title, text, url, subtitle,buttonStyle,children}) {
                     <h1 className='section_title'>{subtitle}</h1>
                     <p className="section_text">{text}</p>
                     <div>
-                        <NewButton buttonStyle={buttonStyle} url={url} children={children}/>
+                        <Button buttonStyle={buttonStyle} url={url} children={children}/>
                     </div>
                 </div>
 

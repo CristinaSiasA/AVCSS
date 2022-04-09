@@ -1,10 +1,16 @@
 import React from 'react';
+import Banner from "../common/Banner";
 
 const AboutBanner = () => {
     return (
-        <div className="banner">
+        <>
+            <Banner
+                title={"About Us"}
+                subtitle={"We’re bringing Renewable Energy Solutions to Every Home!"}
+                bannerId="banner-bg"
+            />
+        </>
 
-        </div>
     );
 };
 

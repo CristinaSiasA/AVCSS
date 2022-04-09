@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import "./navbar.css"
 import logo from '../../assets/images/logo.png'
-import NewButton from './NewButton';
+import Button from './Button';
 
 function MainMenu() {
     const [click, setClick] = useState(false);
@@ -33,8 +33,8 @@ function MainMenu() {
 
     return (
         <>
-            <nav className='navbar'>
-                <div className='navbar-container'>
+            <nav className='my-navbar'>
+                <div className='my-navbar-container'>
                     <Link to='/'  className='navbar-logo' onClick={closeMobileMenu}>
                         <img src={logo} alt="AVCSS logo"/>
                     </Link>
@@ -73,7 +73,7 @@ function MainMenu() {
                             </Link>
                         </li>
                     </ul>
-                    <NewButton buttonStyle='my-btn my-btn--primary my-btn--medium no-display-btn' url={'/quote'}>Request a Quote</NewButton>}
+                    <Button buttonStyle='my-btn my-btn--outline my-btn--medium no-display-btn' url={'/quote'}>Request a Quote</Button>
                 </div>
             </nav>
         </>

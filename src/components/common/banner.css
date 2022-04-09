@@ -1,11 +1,26 @@
 
 
-.banner-color{
-    background-image: url("../../assets/images/hero-1.jpg");
+#banner-bg{
+    background-image: url("../../assets/images/banner-about.jpg");
     background-size: cover;
     height:300px;
 }
 
+#banner-bg2{
+    background-image: url("../../assets/images/banner-solar.jpg");
+    background-size: cover;
+    height:300px;
+}
+#banner-bg3{
+    background-image: url("../../assets/images/banner-wind.jpg");
+    background-size: cover;
+    height:300px;
+}
+#banner-bg4{
+    background-image: url("../../assets/images/banner-education.jpg");
+    background-size: cover;
+    height:300px;
+}
 /*.banner-color{*/
 /*    background: var(--custom-secondary);*/
 /*height:300px;*/

@@ -6,8 +6,6 @@ const Header = () => {
     return (
         <div>
             <TopBar/>
-       <div>
-       </div>
         <div>
             <MainMenu/>
         </div>

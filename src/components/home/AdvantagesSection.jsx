@@ -1,10 +1,10 @@
 import React from 'react';
 import './advantagesSection.css';
 import CardItem from '../../components/common/Card_Item';
-import image1 from '../../assets/images/hero-1.jpg';
-import image2 from '../../assets/images/adv-3.jpg';
-import image3 from '../../assets/images/adv-2.PNG';
-import image4 from '../../assets/images/hero-2.jpg';
+import image1 from '../../assets/images/adv-1.jpg';
+import image2 from '../../assets/images/adv-2.PNG';
+import image3 from '../../assets/images/adv-3.jpg';
+import image4 from '../../assets/images/adv-4.jpg';
 
 function AdvantagesSection() {
     return (
@@ -28,14 +28,14 @@ function AdvantagesSection() {
                     </ul>
                     <ul className='cards__items'>
                         <CardItem
-                            src={image3}
+                            src={image2}
                             title='Contact us to Get a Quotation and Financing Plan in Few Hours'
                             label='Easy Financing'
                             path='/quote'
                         />
 
                         <CardItem
-                            src={image2}
+                            src={image3}
                             title='Experienced Professionals to Ensure a Quick and Hassle-Free Installation'
                             label='Fast Installation'
                             path='/about'

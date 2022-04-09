@@ -1,35 +1,13 @@
 import React from 'react';
 import './button.css';
-import {Link, useLocation} from 'react-router-dom';
-
-const STYLES = ['btn--primary','btn--secondary', 'btn--outline', 'btn--outline--white'];
-
-const SIZES = ['btn--medium', 'btn--large'];
 
 
-export const Button = ({
-                           children,
-                           type,
-                           onClick,
-                           buttonStyle,
-                           buttonSize,
-
-                       }) => {
-    const checkButtonStyle = STYLES.includes(buttonStyle)
-        ? buttonStyle
-        : STYLES[0];
-
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
+const Button = ({buttonStyle, children,url}) => {
     return (
-        <Link to={"/quote"} className='btn-mobile'>
-            <button
-                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-                onClick={onClick}
-                type={type}
-            >
-                {children}
-            </button>
-        </Link>
+        <a href={url} className={`my-btn ${buttonStyle}`}>
+            {children}
+        </a>
     );
 };
+
+export default Button;
