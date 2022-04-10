@@ -1,6 +1,6 @@
 .section_container{
     height: 100%;
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: stretch;
     padding: 20px;
@@ -8,17 +8,15 @@
 }
 
 .section_image{
-    width:1000px;
-    padding: 50px;
+background-color: var(--custom-secondary);
 }
-.main_image{
+.main_image {
     width: 100%;
+    padding: 40px;
 }
 
 .section_content{
-    padding: 50px;
     background-color: var(--custom-light-gray);
-    margin:auto;
 }
 .section_content h5{
     font-size: 30px;

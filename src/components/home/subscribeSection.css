@@ -16,11 +16,6 @@
 
 }
 
-.subscription_text {
-    margin-bottom: 24px;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
 
 .subscription_input {
     padding: 8px 20px;
@@ -34,14 +29,17 @@
 
 .subscription_input::placeholder {
     color: #b1b1b1;
+
 }
 @media screen and (max-width: 820px) {
 
     .subscription_input {
     width: 100%;
+
     }
     .subscription_input::placeholder {
         text-align: center;
+
     }
 
 }

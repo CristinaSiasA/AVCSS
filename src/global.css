@@ -37,8 +37,13 @@ h1 {
 }
 
 .style-titles{
-    text-shadow: 1px 1px 2px #242222;
-    letter-spacing: .1rem;;
+   text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+}
+.style-subtitles{
+    text-transform: capitalize;
+    letter-spacing: .1rem;
 }
 
 .Green_gradient_bg{

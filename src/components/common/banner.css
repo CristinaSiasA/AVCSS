@@ -1,25 +1,25 @@
 
-
 #banner-bg{
-    background-image: url("../../assets/images/banner-about.jpg");
+    background-color: #0f847e;
+    background-image: url("../../assets/images/banner-about.jpeg");
     background-size: cover;
-    height:300px;
+    /*height:500px;*/
 }
 
 #banner-bg2{
-    background-image: url("../../assets/images/banner-solar.jpg");
+    background-image: url("../../assets/images/banner-solar.jpeg");
     background-size: cover;
-    height:300px;
+    /*height:500px;*/
 }
 #banner-bg3{
-    background-image: url("../../assets/images/banner-wind.jpg");
+    background-image: url("../../assets/images/banner-wind.jpeg");
     background-size: cover;
-    height:300px;
+    /*height:500px;*/
 }
 #banner-bg4{
-    background-image: url("../../assets/images/banner-education.jpg");
+    background-image: url("../../assets/images/banner-education.jpeg");
     background-size: cover;
-    height:300px;
+    /*height:500px;*/
 }
 /*.banner-color{*/
 /*    background: var(--custom-secondary);*/

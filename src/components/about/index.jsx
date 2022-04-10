@@ -1,11 +1,11 @@
 import AboutBanner from "./AboutBanner";
-import GoGreenSection from "../home/GoGreenSection";
+import MissionSection from "./MissionSection";
 
 export default function AboutComponents() {
     return (
         <>
             <AboutBanner/>
-            <GoGreenSection/>
+            <MissionSection/>
         </>
     )
 

@@ -4,12 +4,12 @@ import './subscribeSection.css'
 function SubscribeSection (){
     return(
 <section className='container_subscription Green_gradient_bg'>
-    <h3 className='subscription_header'>
+    <h1 className='subscription_header display-5'>
         Subscribe to Our Newsletter to Receive the Best Deals!
-    </h3>
-    <p className='subscription_text'>
+    </h1>
+    <h3 className='style-subtitles'>
        You Can Unsubscribe Any Time
-    </p>
+    </h3>
     <div className='input_area'>
         <form>
             <input
