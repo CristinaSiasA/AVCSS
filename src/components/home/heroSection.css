@@ -23,14 +23,15 @@ video {
     padding:30px 0;
 
 }
-
+.hero_buttons{
+    padding-bottom: 30px;
+}
 .caption_container> h1{
     margin-top: 30px;
     color: #fff;
     font-weight: bolder;
     font-size: 50px;
     z-index: 3;
-    text-shadow: 0 2px 2px #120805;
     text-align: center;
 }
 
@@ -39,7 +40,6 @@ video {
     text-align: center;
     color: #fff;
     font-size: 30px;
-    text-shadow: 0 2px 2px #120805;
     z-index: 4;
     letter-spacing: .1rem;
 }

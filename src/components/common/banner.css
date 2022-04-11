@@ -3,25 +3,25 @@
     background-color: #0f847e;
     background-image: url("../../assets/images/banner-about.jpeg");
     background-size: cover;
-    /*height:500px;*/
+
 }
 
 #banner-bg2{
     background-image: url("../../assets/images/banner-solar.jpeg");
     background-size: cover;
-    /*height:500px;*/
+
 }
 #banner-bg3{
     background-image: url("../../assets/images/banner-wind.jpeg");
     background-size: cover;
-    /*height:500px;*/
+
 }
-#banner-bg4{
+#banner-bg4 {
     background-image: url("../../assets/images/banner-education.jpeg");
     background-size: cover;
-    /*height:500px;*/
 }
-/*.banner-color{*/
-/*    background: var(--custom-secondary);*/
-/*height:300px;*/
-/*}*/
+
+#banner-bg5{
+    background-image: url("../../assets/images/banner-quote.jpeg");
+    background-size: cover;
+}

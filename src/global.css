@@ -38,7 +38,6 @@ h1 {
 
 .style-titles{
    text-transform: uppercase;
-    font-weight: bolder;
     letter-spacing: .1rem;
 }
 .style-subtitles{
@@ -46,6 +45,28 @@ h1 {
     letter-spacing: .1rem;
 }
 
+.section_container-white{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+}
+
+.section_container_light{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: var(--custom-light-gray);
+}
+.section_container_green{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: var(--custom-dark-green);
+}
 .Green_gradient_bg{
     /* ff 3.6+ */
     background:-moz-linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);

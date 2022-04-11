@@ -1,9 +1,9 @@
-import BannerEducation from "./BannerEducation";
+import EducationBanner from "./EducationBanner";
 
 export default function EducationComponents() {
     return (
         <>
-            <BannerEducation/>
+            <EducationBanner/>
         </>
     )
 

@@ -6,7 +6,7 @@ const SolarBanner = () => {
         <>
             <Banner
                 title={"Solar Energy"}
-                subtitle={"Going solar is more practical, reliable and cost effective than ever!"}
+                subtitle={"Going solar is more practical and cost effective than ever!"}
                 bannerId="banner-bg2"
             />
         </>
