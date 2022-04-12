@@ -21,10 +21,12 @@ h1 {
 .cards__wrapper {
     position: relative;
     margin: 20px 0 45px;
+
 }
 
 .cards__items {
     margin-bottom: 24px;
+    padding: 0;
 }
 
 .cards__item {
