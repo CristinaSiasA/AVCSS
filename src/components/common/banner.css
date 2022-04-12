@@ -1,0 +1,27 @@
+
+#banner-bg{
+    background-color: #0f847e;
+    background-image: url("../../assets/images/banner-about.jpeg");
+    background-size: cover;
+
+}
+
+#banner-bg2{
+    background-image: url("../../assets/images/banner-solar.jpeg");
+    background-size: cover;
+
+}
+#banner-bg3{
+    background-image: url("../../assets/images/banner-wind.jpeg");
+    background-size: cover;
+
+}
+#banner-bg4 {
+    background-image: url("../../assets/images/banner-education.jpeg");
+    background-size: cover;
+}
+
+#banner-bg5{
+    background-image: url("../../assets/images/banner-quote.jpeg");
+    background-size: cover;
+}

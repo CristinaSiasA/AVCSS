@@ -1,10 +1,16 @@
-import Hero from "./Hero"
 import './home.css'
+import HeroSection from "./HeroSection";
+import SubscribeSection from "./SubscribeSection";
+import AdvantagesSection from "./AdvantagesSection";
+import BrandSection from "./BrandsSection";
 
 export default function HomeComponent() {
     return (
         <>
-            <Hero/>
+            <HeroSection/>
+            <BrandSection/>
+            <AdvantagesSection/>
+            <SubscribeSection/>
         </>
     )
 

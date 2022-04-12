@@ -1,0 +1,15 @@
+.main_image {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.section_content div{
+    text-align: left;
+    margin-top: 50px;
+}
+.section_icon{
+    color: var(--custom-primary);
+    font-size: 60px;
+    padding: 15px;
+}

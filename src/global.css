@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+:root {
+    --custom-primary: #4cb269;
+    --custom-secondary: #68c2c2;
+    --custom-light-blue:#68c2c2;
+    --custom-light-gray:#ebeae6;
+    --custom-dark-gray:#333333;
+    --custom-dark-green:#005051;
+
+    --font-family: 'Manrope', sans-serif;
+
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+    --color-bg: #040C18;
+    --color-footer : #031B34;
+    --color-section: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin: 2rem 1rem;
+}
+
+.style-titles{
+   text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.style-subtitles{
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+.section_container-white{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: white;
+}
+
+.section_container_light{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: var(--custom-light-gray);
+}
+.section_container_green{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: var(--custom-dark-green);
+}
+.Green_gradient_bg{
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005051', endColorstr='#68C2C2', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(104, 194, 194, 1) 0%, rgba(76, 178, 105, 1) 54%, rgba(0, 80, 81, 1) 100%);
+}

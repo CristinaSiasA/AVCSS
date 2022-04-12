@@ -1,11 +1,17 @@
-import Hero from "./Hero"
-import './about.css'
+import AboutBanner from "./AboutBanner";
+import MissionSection from "./MissionSection";
+import AboutTopSection from "./AboutTopSection";
+import OfferSection from "./OfferSection";
+import TeamSection from "./TeamSection";
 
-export default function AboutComponent() {
+export default function AboutComponents() {
     return (
         <>
-            <Hero/>
+            <AboutBanner/>
+            <AboutTopSection/>
+            <MissionSection/>
+            <OfferSection/>
+            <TeamSection/>
         </>
     )
-
 }
