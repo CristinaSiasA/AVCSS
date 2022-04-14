@@ -45,6 +45,11 @@ h1 {
     letter-spacing: .1rem;
 }
 
+.white-text h1, .white-text h3{
+    color: white;
+    font-weight: bolder;
+}
+
 .section_container-white{
     height: 100%;
     width: 100%;

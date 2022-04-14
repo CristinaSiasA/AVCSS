@@ -7,7 +7,7 @@ function BasicSection({src, title, text,icon, url, subtitle,buttonStyle,children
     return (
         <div className="container p-lg-5 p-sm-1">
             <div>
-                <h1 className='section_title style-titles pt-5'>{title}</h1>
+                <h1 className='section_title style-titles py-5'>{title}</h1>
             </div>
             <div className="row justify-content-center p-2">
             <div  className='col-lg-6 col-md-6 col-sm-12 col-xs-12 align-self-center section_image'>

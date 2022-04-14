@@ -11,6 +11,8 @@ export default function AboutComponents() {
             <AboutTopSection/>
             <MissionSection/>
             <OfferSection/>
+            <TeamSection/>
+
         </>
     )
 }
