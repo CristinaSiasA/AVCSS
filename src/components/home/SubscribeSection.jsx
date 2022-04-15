@@ -5,7 +5,7 @@ function SubscribeSection (){
     return(
 <section className='container_subscription Green_gradient_bg white-text'>
     <h1 className='subscription_header display-5'>
-        Subscribe to Our Newsletter to Receive the Best Deals!
+        Subscribe to Our Newsletter
     </h1>
     <h3 className='style-subtitles'>
        You Can Unsubscribe Any Time

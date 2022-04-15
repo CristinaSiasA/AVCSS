@@ -36,7 +36,7 @@ function TeamSection({title, subtitle, bannerId}) {
 
                 <>
                     <Modal
-                        centered
+                        style={{ top: 50 }}
                         visible={visible}
                         onOk={() => setVisible(false)}
                         onCancel={() => setVisible(false)}
@@ -45,12 +45,12 @@ function TeamSection({title, subtitle, bannerId}) {
                     >
                         {
                            visible && details && (
-                               <div className="card p-3 border-0">
+                               <div className="card p-4 border-0">
                                    <img src={details.image} className="card-img-top" alt="..."/>
                                    <div className="card-body">
-                                       <h3 className="card-title">{details.name}</h3>
-                                       <h5 className="card-title text-success">{details.role}</h5>
-                                       <p className="card-text text-justify pt-3">{details.description.p}</p>
+                                       <h1 className="card-title pt-5">{details.name}</h1>
+                                       <h6 className="card-title text-muted text-centerGIT">{details.role}</h6>
+                                       <p className="card-text text-justify lead pt-3">{details.description.p}</p>
                                    </div>
                                </div>
                            )
@@ -59,7 +59,7 @@ function TeamSection({title, subtitle, bannerId}) {
                     </Modal>
                 </>
 
-                <div className="row flex-wrap align-items-center">
+                <div className="row flex-wrap align-items-center m-3">
                     {personList && personList.map(person => (
                 <div className="col-lg-3 col-sm-10 p-3 m-auto">
                         <TeamCard  key={person.id} name={person.name} role={person.role} url={person.image}

@@ -8,7 +8,7 @@ function MissionSection() {
         <div className="section_container">
             <BasicSection
                 src={PlanetImage}
-                title={<h1>~ OUR <span style={{ color: '#4cb269'}}>MISSION</span> ~</h1>}
+                title={<>~ OUR <span style={{ color: '#4cb269'}}>MISSION</span> ~</>}
                 icon={<i className="fa-solid fa-bolt"/>}
                 subtitle={'Powering a green future!'}
                 text={'Our mission is to provide maximum value for our customers through the installation of high-quality, innovative solar and wind energy systems. We achieve this by offering a wide variety of design and financing options while delivering superior customer service.'}
