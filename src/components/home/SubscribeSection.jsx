@@ -1,7 +1,9 @@
 import React from "react";
 import './subscribeSection.css'
 
+
 function SubscribeSection (){
+
     return(
 <section className='container_subscription Green_gradient_bg white-text'>
     <h1 className='subscription_header display-5'>
@@ -18,7 +20,7 @@ function SubscribeSection (){
                 type='email'
                 placeholder='Enter Your Email'
             />
-            <button type="submit" className="btn btn-outline-light btn-lg">Subscribe</button>
+            <button type="submit" className="btn btn-outline-light btn-lg" >Subscribe</button>
         </form>
     </div>
 </section>
