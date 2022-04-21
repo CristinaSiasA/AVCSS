@@ -13,7 +13,7 @@ function SubscribeSection (){
     <div className='input_area'>
         <form>
             <input
-                className='subscription_input'
+                className='form-control subscription_input'
                 name='email'
                 type='email'
                 placeholder='Your Email'

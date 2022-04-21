@@ -11,14 +11,14 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>About Us</h2>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
+                        <Link to='/about'>Mission</Link>
+                        <Link to='/about'>Team</Link>
 
                     </div>
                     <div className='footer-link-items'>
                         <h2>Contact Us</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
+                        <Link to='/quote'>Contact</Link>
+                        <Link to='/education'>Learn More</Link>
 
                     </div>
 
@@ -35,7 +35,7 @@ function Footer() {
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link facebook'
-                            to='/'
+                            to='https://www.facebook.com/'
                             target='_blank'
                             aria-label='Facebook'
                         >

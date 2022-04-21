@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,500;1,900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +15,8 @@
     --custom-dark-gray:#333333;
     --custom-dark-green:#005051;
 
-    --font-family: 'Manrope', sans-serif;
+    --font-family:'roboto', sans-serif;
+
 
     --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
@@ -49,7 +48,9 @@ h1 {
     color: white;
     font-weight: bolder;
 }
-
+.bold{
+    font-weight: bold;
+}
 .section_container-white{
     height: 100%;
     width: 100%;
@@ -70,6 +71,9 @@ h1 {
     width: 100%;
     display: flex;
     align-items: stretch;
+    background-color: var(--custom-dark-green);
+}
+.back-green{
     background-color: var(--custom-dark-green);
 }
 .Green_gradient_bg{

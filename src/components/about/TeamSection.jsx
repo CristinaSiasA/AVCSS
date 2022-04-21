@@ -61,7 +61,7 @@ function TeamSection({title, subtitle, bannerId}) {
 
                 <div className="row flex-wrap align-items-center my-3 mx-5">
                     {personList && personList.map(person => (
-                <div className="col-lg-3 col-sm-5 p-3 m-auto">
+                <div className="col-lg-3 col-sm-5 p-3 ">
                         <TeamCard  key={person.id} name={person.name} role={person.role} url={person.image}
                                   onclick={handleOnClick} id={person.id}/>
                 </div>
