@@ -11,14 +11,14 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>About Us</h2>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
+                        <Link to='/about'>Mission</Link>
+                        <Link to='/about'>Team</Link>
 
                     </div>
                     <div className='footer-link-items'>
                         <h2>Contact Us</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
+                        <Link to='/quote'>Contact</Link>
+                        <Link to='/education'>Learn More</Link>
 
                     </div>
 
@@ -27,52 +27,62 @@ function Footer() {
             <section className='social-media'>
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
-                        <Link to='/' className='social-logo'>
+                        <a
+                            className='social-logo'
+                            href='https://www.ncirl.ie/'
+                            target='_blank'
+                            rel="noreferrer"
+                        >
                             <img src={Logo_NCI} alt={'Logo NCI'} />
-                        </Link>
+                        </a>
                     </div>
                     <small className='website-rights'> Daniel O'Driscoll © Cristina Sias 2022</small>
                     <div className='social-icons'>
-                        <Link
-                            class='social-icon-link facebook'
-                            to='/'
+                        <a
+                            className='social-icon-link facebook'
+                            href='https://www.facebook.com/'
                             target='_blank'
+                            rel="noreferrer"
                             aria-label='Facebook'
                         >
                             <i className='fab fa-facebook-f' />
-                        </Link>
-                        <Link
-                            class='social-icon-link instagram'
-                            to='/'
+                        </a>
+                        <a
+                            className='social-icon-link instagram'
+                            href='https://www.instagram.com/'
                             target='_blank'
+                            rel="noreferrer"
                             aria-label='Instagram'
                         >
                             <i className='fab fa-instagram' />
-                        </Link>
-                        <Link
-                            class='social-icon-link youtube'
-                            to='/'
+                        </a>
+                        <a
+                            className='social-icon-link youtube'
+                            href='https://www.youtube.com/'
                             target='_blank'
+                            rel="noreferrer"
                             aria-label='Youtube'
                         >
                             <i className='fab fa-youtube' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
+                        </a>
+                        <a
+                            className='social-icon-link twitter'
+                            href='https://twitter.com/feed'
                             target='_blank'
+                            rel="noreferrer"
                             aria-label='Twitter'
                         >
                             <i className='fab fa-twitter' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
+                        </a>
+                        <a
+                            className='social-icon-link linkedin'
+                            href='https://www.linkedin.com/feed/'
                             target='_blank'
+                            rel="noreferrer"
                             aria-label='LinkedIn'
                         >
                             <i className='fab fa-linkedin' />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </section>

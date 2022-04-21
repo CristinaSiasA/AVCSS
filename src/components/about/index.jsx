@@ -12,6 +12,7 @@ export default function AboutComponents() {
             <MissionSection/>
             <OfferSection/>
             <TeamSection/>
+
         </>
     )
 }

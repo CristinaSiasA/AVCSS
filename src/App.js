@@ -7,7 +7,9 @@ import Wind from './pages/Wind'
 import About from './pages/About'
 import Quote from './pages/Quote'
 import Education from './pages/Education'
+import 'antd/dist/antd.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 
 export default function App() {
     return (
