@@ -10,7 +10,7 @@ function TeamSection({title, subtitle, bannerId}) {
     const [details, setDetails] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3005/employees")
+        fetch("http://localhost:8080/employees")
             .then(res => res.json())
             .then(data => {
                 setPerson(data)

@@ -1,29 +1,19 @@
-import React, {useContext} from 'react';
-import { Pie } from '@ant-design/plots';
-import {CalculationContext} from "../../../context";
+import React from 'react';
+import {Pie} from '@ant-design/plots';
+import {annualEnergy, gridUsage} from "../../../util";
 
-// import {
-//     annualEnergy,
-//     gridUsage
-// } from "../../../util";
-//
-//
-// const data = useContext(CalculationContext);
-// const solar = data && annualEnergy(data.panelArea,data.irradiation)
-// const grid = data && gridUsage(data.electricityRate, data.monthlyBill, data.panelArea, data.irradiation)
-
-
-
-const DemoPie = () => {
+const SelfSufficiencyChart = ({info}) => {
+    const solar = info && annualEnergy(info.panelArea, info.irradiation)
+    const grid = info && gridUsage(info.electricityRate, info.monthlyBill, info.panelArea, info.irradiation)
 
     const data = [
         {
             type: 'Grid Energy',
-            value: 27,
+            value: grid >= 0 ? grid : 0,
         },
         {
             type: 'Self Produced',
-            value: 25,
+            value: Math.abs(solar),
         },
     ];
     const config = {
@@ -63,9 +53,9 @@ const DemoPie = () => {
         },
     };
     return (
-    <div>
-    <Pie {...config} />
-    </div>
+        <div>
+            <Pie {...config} />
+        </div>
     )
 };
-export default DemoPie;
+export default SelfSufficiencyChart;

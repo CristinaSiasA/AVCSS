@@ -13,10 +13,10 @@ function SubscribeSection (){
     <div className='input_area'>
         <form>
             <input
-                className='form-control subscription_input'
+                className='subscription_input text-muted'
                 name='email'
                 type='email'
-                placeholder='Your Email'
+                placeholder='Enter Your Email'
             />
             <button type="submit" className="btn btn-outline-light btn-lg">Subscribe</button>
         </form>

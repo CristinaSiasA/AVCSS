@@ -1,21 +1,12 @@
-import {useContext, useState} from 'react';
+import React from 'react';
 import Highcharts from 'highcharts'
 import BarChart from 'highcharts-react-official'
-import {CalculationContext} from "../../../context";
-
-import {
-    annualConsumptionCalculator,
-    annualEnergy
-} from "../../../util";
+import {annualConsumptionCalculator, annualEnergy} from "../../../util";
 
 
-
-
-function BarChartEnergy(props) {
-    const data = useContext(CalculationContext);
-    const annualConsumption = data && annualConsumptionCalculator(data.electricityRate, data.monthlyBill);
-    const solar = data && annualEnergy(data.panelArea, data.irradiation)
-
+function BarChartEnergy({info}) {
+    const annualConsumption = info && annualConsumptionCalculator(info.electricityRate, info.monthlyBill);
+    const solar = info && annualEnergy(info.panelArea, info.irradiation)
     const config = {
         chart: {
             type: 'bar'
@@ -66,16 +57,16 @@ function BarChartEnergy(props) {
         },
         series: [{
             name: 'Solar Generated',
-            data: {solar}
+            data: [parseInt(solar)]
         }, {
             name: 'Total Consumed',
-            data: [annualConsumption]
+            data: [parseInt(annualConsumption)]
         }],
     }
 
     return (
         <div>
-          <BarChart highcharts={Highcharts} options={config}/>
+            <BarChart highcharts={Highcharts} options={config}/>
         </div>
     );
 }
