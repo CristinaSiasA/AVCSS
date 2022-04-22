@@ -81,7 +81,7 @@ const CalculatorComponent = () => {
                         <p className="text-center text-white py-3 px-5">Estimate the annual electricity bill savings and payback period for an investment in a domestic solar PV system using this simple calculator. <br/> Select the fields and Click the button below to come up with an estimate.</p>
                     </div>
                     <div className="row justify-content-center">
-                        <div className="col bg-white pt-4  m-2 rounded">
+                        <div className="col bg-white pt-4 pl-2 m-2 rounded">
                             <div>
                                 <h5 className="text-center text-muted">Electricity Bill</h5>
                             </div>
