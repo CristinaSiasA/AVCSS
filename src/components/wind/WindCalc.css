@@ -1,0 +1,309 @@
+/*main container*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.calculator-container {
+  margin: 100px auto;
+  width: 700px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  background-color: lightskyblue;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  background-image: url("../../assets/images/turbine.jpeg");
+  background-size: cover;
+}
+
+.calculator-container-2 {
+  margin: 100px auto;
+  width: 700px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 520px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(29, 114, 121),
+    rgb(61, 164, 228)
+  );
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 165px 165px 165px;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.calculator-banner {
+  background-color: blueviolet;
+  grid-column-end: span 2;
+  text-align: center;
+  color: lightblue;
+  font-family: sans-serif;
+  font-size: larger;
+}
+
+/* Left side box */
+.left-side-box-location {
+  background-color: transparent;
+  border-right: 10px;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+}
+
+.left-side-box-text {
+  background-color: transparent;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 22px;
+}
+h3 {
+  margin: 0px;
+}
+
+.right-side-box-text {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.left-side-box-button {
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  background-color: rgb(76, 149, 157);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 30px;
+
+  color: white;
+}
+
+.right-side-box-button {
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+  border-radius: 6px;
+  background-image: linear-gradient(
+    to right,
+    rgb(29, 114, 121),
+    rgb(61, 164, 228)
+  );
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 30px;
+
+  color: white;
+}
+
+.left-side-box-wind {
+  background-color: transparent;
+  border-right: 10px;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+}
+
+.left-side-box-blade {
+  background-color: transparent;
+  border-right: 10px;
+  grid-column-end: span 1;
+  grid-row-end: span 1;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+}
+
+.right-side-box-savings {
+  background-color: transparent;
+  border-right: 10px;
+  grid-column-end: span 1;
+  grid-row-end: span 3;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+}
+
+.footer {
+  background-color: red;
+
+  border-right: 10px;
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+}
+
+.step1 {
+  left: 100px;
+  text-align: center;
+
+  border: 1px;
+  color: antiquewhite;
+  font-size: 25px;
+}
+
+.wind-speed {
+  background-color: azure;
+  grid-column-end: span 2;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.goto_calc {
+  position: absolute;
+  left: 35%;
+  margin-top: 30px;
+  color: aliceblue;
+  border: none;
+  padding: 15px 32px;
+  background-image: linear-gradient(
+    to right,
+    rgb(29, 114, 121),
+    rgb(61, 164, 228)
+  );
+
+  text-align: center;
+  font-size: 15px;
+}
+
+.calc-return-button {
+  background-color: transparent;
+  border: none;
+  color: azure;
+  position: absolute;
+  left: 95%;
+  top: 4%;
+}
+
+.button-pos {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+
+  color: aliceblue;
+  border: none;
+  padding: 15px 32px;
+  background-color: darkcyan;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.button-wind {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+
+  color: aliceblue;
+  border: none;
+  padding: 15px 32px;
+  background-color: darkcyan;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-inputs {
+  text-align: center;
+
+  border-radius: 8px;
+  border: 2px;
+  border-color: black;
+  padding: 10px 10px;
+
+  width: 50%;
+}
+
+.button-power {
+  position: absolute;
+  top: 90%;
+  left: 37%;
+
+  color: aliceblue;
+  border: none;
+  padding: 15px 32px;
+  background-color: darkcyan;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.calculator-description {
+  text-align: center;
+  -webkit-text-stroke: 0.5px darkgray;
+  border: 1px;
+  color: white;
+  font-size: 45px;
+}
+
+.description-position {
+  position: absolute;
+  width: 50%;
+  top: 40px;
+}
+.wind_button {
+  position: absolute;
+  top: 42%;
+  left: 67%;
+  color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 32px;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 230, 236),
+    rgb(61, 164, 228)
+  );
+
+  text-align: center;
+  font-size: 15px;
+}
+
+.savings_button {
+  position: absolute;
+  top: 88%;
+  left: 66%;
+  color: aliceblue;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 32px;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 230, 236),
+    rgb(61, 164, 228)
+  );
+
+  text-align: center;
+  font-size: 15px;
+}
