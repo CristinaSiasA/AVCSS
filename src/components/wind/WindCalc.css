@@ -29,7 +29,11 @@
   background-color: rgba(10, 10, 10, 0.837);
   border-radius: 8px;
 }
-
+.start-text p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
 .start-text {
   text-align: center;
   position: relative;
@@ -40,6 +44,7 @@
   color: azure;
   font-weight: bold;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .goto_calc {
@@ -84,7 +89,7 @@
   grid-template-rows: 150px 150px 40px;
   background-color: rgba(10, 10, 10, 0.837);
   grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-row-gap: 30px;
   padding: 10px;
   border-radius: 8px;
 }
@@ -92,6 +97,7 @@
 .userInput-title-container {
   grid-column-end: span 4;
   grid-template-columns: 100px;
+  margin-top: 0;
 }
 
 .calc-return-button {
