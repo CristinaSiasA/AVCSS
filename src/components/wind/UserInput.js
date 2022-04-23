@@ -6,7 +6,7 @@ import WindSpeedFinder from "./WindSpeedFinder";
 const UserInput = ({ button_return }) => {
   const { findPosition, findWindSpeed, lat, lng, finalSpeed } =
     WindSpeedFinder();
-  const [power, setPower] = useState(null);
+  const [power, setPower] = useState(0);
   const [bladeRad, setBladeRad] = useState();
 
   const findPower = (e) => {
