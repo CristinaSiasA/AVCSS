@@ -21,23 +21,89 @@ const UserInput = ({ button_return }) => {
       0.3 *
       0.25
     ).toFixed(2);
+    if (isNaN(calc)) calc = 0;
 
     setPower(calc);
   };
 
   return (
     <div className="calculator-container-2">
-      <div className="left-side-box-location">
-        <div className="left-side-box-text">
-          <button className="left-side-box-button" onClick={findPosition}>
+      <div className="userInput-container">
+        <div className="userInput-title-container start-text">
+          Wind Savings Calculator
+          <p>
+            {" "}
+            Start by finding your current location. You can use this to
+            calculate the average windspeed for your area. Choose your blade
+            size and calculate your savings!
+          </p>
+          <button
+            className="calc-return-button"
+            primary="true"
+            onClick={() => {
+              button_return(true);
+            }}
+          >
+            x
+          </button>
+        </div>
+        <div className="location-container">
+          <button className="location-button" onClick={findPosition}>
             Find Your Location
           </button>{" "}
           <br></br>
-          <span>Latitude: {lat}</span> <br></br>
-          <span>Longitude: {lng}</span>
+          <span>Latitude: {lat} &#176;</span> <br></br>
+          <span>Longitude: {lng} &#176;</span>
+        </div>
+        <div className="wind-container">
+          <button className="windspeed-button" onClick={findWindSpeed}>
+            Find Wind Speed
+          </button>{" "}
+          <br></br>
+          <span>
+            Average Wind Speed: <br></br>
+            {finalSpeed} m/s{" "}
+          </span>
+        </div>
+        <div className="blade-container">
+          <div className="turbine-bladesize-text">
+            Blade Size (m<sup>2)</sup>
+          </div>
+
+          <form>
+            <input
+              className="form-inputs"
+              type="text"
+              required
+              value={bladeRad}
+              placeholder="Enter Size Here"
+              onChange={(e) => setBladeRad(e.target.value)}
+            ></input>
+          </form>
+        </div>
+        <div className="saving-container">
+          <div className="saving-title-text">Annual Savings</div>
+          <div className="saving-value">
+            <h3>&#x20AC;{power}</h3>
+          </div>
+        </div>
+        <div className="calculate-button">
+          <button className="calculate-savings-button" onClick={findPower}>
+            Calculate Savings!
+          </button>
         </div>
       </div>
+    </div>
+  );
+};
 
+export default UserInput;
+
+/*
+
+
+
+    
       <div className="right-side-box-savings">
         <div className="right-side-box-text">
           <button
@@ -81,69 +147,5 @@ const UserInput = ({ button_return }) => {
           </form>
         </div>
       </div>
-    </div>
 
-    /* This section here is for the intial landing page of the calculator
-        <div className="position-coord">
-        <button className="goto_calc">Start</button>
-        <h3 className="calculator-description">
-          Find out how much you can save with our wind energy calculator!
-        </h3>
-      </div>
-    </div>
-
-
-
-  <div className="wind-speed">
-        <button className="button-wind" onClick={findWindSpeed}>
-          Find Average Wind Speed for Your Area!
-        </button>
-        <h3>{finalSpeed}</h3>
-      </div>
-
-      <div className="blade-size">
-        <form>
-          <input
-            className="form-inputs"
-            type="text"
-            required
-            value={bladeRad}
-            placeholder="Enter desired blade size here"
-            onChange={(e) => setBladeRad(e.target.value)}
-          ></input>
-          <h3>Enter your Preferred Blade Size</h3>
-        </form>
-        <button className="button-power" type="submit" onClick={findPower}>
-          Calculate My Saving!
-        </button>
-      </div>
-
-
-
-
-
-
-      <button onClick={findWindSpeed}>Find my Average Wind Speed</button>
-      <h2>This is your average windspeed: {finalSpeed}</h2>
-      <form>
-        <h2>Choose your blade size </h2>
-
-        <input
-          type="text"
-          required
-          value={bladeRad}
-          placeholder="Enter desired blade size here"
-          onChange={(e) => setBladeRad(e.target.value)}
-        ></input>
-        <br></br>
-        <button type="submit" onClick={findPower}>
-          Calculate My Saving!
-        </button>
-        <h2>This is your saved power: {power}</h2>
-      </form>
-    </div>
-    */
-  );
-};
-
-export default UserInput;
+*/

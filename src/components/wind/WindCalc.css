@@ -2,194 +2,54 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-.calculator-container {
-  margin: 100px auto;
-  width: 700px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  border-radius: 10px;
-  height: 500px;
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  background-color: lightskyblue;
-  grid-template-columns: 0.8fr 0.8fr;
-  grid-template-rows: 0.1fr 0.1fr 0.1fr;
-  background-image: url("../../assets/images/turbine.jpeg");
-  background-size: cover;
-}
-
-.calculator-container-2 {
-  margin: 100px auto;
-  width: 700px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  border-radius: 10px;
-  height: 520px;
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  background-image: linear-gradient(
-    to right,
-    rgb(29, 114, 121),
-    rgb(61, 164, 228)
-  );
-  grid-template-columns: 0.8fr 0.8fr;
-  grid-template-rows: 165px 165px 165px;
-  column-gap: 10px;
-  row-gap: 5px;
-}
-
-.calculator-banner {
-  background-color: blueviolet;
-  grid-column-end: span 2;
-  text-align: center;
-  color: lightblue;
-  font-family: sans-serif;
-  font-size: larger;
-}
-
-/* Left side box */
-.left-side-box-location {
-  background-color: transparent;
-  border-right: 10px;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 6px;
-  border: 1px solid skyblue;
-}
-
-.left-side-box-text {
-  background-color: transparent;
-  text-align: center;
-  line-height: 40px;
-  margin-top: 22px;
-}
-h3 {
-  margin: 0px;
-}
-
-.right-side-box-text {
-  font-family: "Roboto", sans-serif;
-  margin-top: 40px;
-}
-
-h1 {
-  margin: 0px;
-}
-
-.left-side-box-button {
-  border: 1px solid lightgrey;
-  border-radius: 6px;
-  background-color: rgb(76, 149, 157);
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 30px;
-
-  color: white;
-}
-
-.right-side-box-button {
-  border: 1px solid lightgrey;
-  margin-top: 20px;
-  border-radius: 6px;
-  background-image: linear-gradient(
-    to right,
-    rgb(29, 114, 121),
-    rgb(61, 164, 228)
-  );
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 30px;
-
-  color: white;
-}
-
-.left-side-box-wind {
-  background-color: transparent;
-  border-right: 10px;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 6px;
-  border: 1px solid skyblue;
-}
-
-.left-side-box-blade {
-  background-color: transparent;
-  border-right: 10px;
-  grid-column-end: span 1;
-  grid-row-end: span 1;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 6px;
-  border: 1px solid skyblue;
-}
-
-.right-side-box-savings {
-  background-color: transparent;
-  border-right: 10px;
-  grid-column-end: span 1;
-  grid-row-end: span 3;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  border-radius: 6px;
-  border: 1px solid skyblue;
-}
-
-.footer {
-  background-color: red;
-
-  border-right: 10px;
-  grid-column-end: span 2;
-  grid-row-end: span 1;
-}
-
-.step1 {
-  left: 100px;
-  text-align: center;
-
-  border: 1px;
-  color: antiquewhite;
-  font-size: 25px;
-}
-
-.wind-speed {
-  background-color: azure;
-  grid-column-end: span 2;
-}
-
-.form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100%;
+.back-image {
   display: flex;
-  flex-direction: column;
+  background-image: url("../../assets/images/turbine.jpeg");
+}
+
+.calculator-container-1 {
   justify-content: center;
-  align-items: center;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 450px;
+  display: grid;
+  padding: 10px;
+  background: url("../../assets/images/sky.jpeg");
+  background-size: cover;
+  grid-template-columns: 0.8fr;
+  grid-template-rows: 150px 150px;
+  border: 1px solid black;
+}
+
+.start-container {
+  justify-content: center;
+  grid-column-end: span 1;
+  grid-row-end: span 2;
+  background-color: rgba(10, 10, 10, 0.837);
+  border-radius: 8px;
+}
+
+.start-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 50px;
+  font-size: 30px;
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .goto_calc {
-  position: absolute;
-  left: 35%;
-  margin-top: 30px;
+  position: sticky;
+  border-radius: 6px;
+  left: 42%;
+  margin-top: 20px;
   color: aliceblue;
   border: none;
-  padding: 15px 32px;
+  padding: 15px 80px;
   background-image: linear-gradient(
     to right,
     rgb(29, 114, 121),
@@ -200,110 +60,159 @@ h1 {
   font-size: 15px;
 }
 
+.calculator-container-2 {
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 550px;
+  display: grid;
+  background: url("../../assets/images/sky.jpeg");
+  background-size: cover;
+  padding: 5px;
+}
+
+.userInput-container {
+  justify-content: center;
+  width: 800px;
+  margin-top: 20px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 80%;
+  display: grid;
+
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: 150px 150px 40px;
+  background-color: rgba(10, 10, 10, 0.837);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.userInput-title-container {
+  grid-column-end: span 4;
+  grid-template-columns: 100px;
+}
+
 .calc-return-button {
-  background-color: transparent;
   border: none;
+  background: transparent;
   color: azure;
   position: absolute;
-  left: 95%;
-  top: 4%;
+  top: -8%;
+  left: 99%;
+  margin: none;
+  font-size: 20px;
 }
 
-.button-pos {
-  position: absolute;
-  top: 30%;
-  left: 65%;
-
-  color: aliceblue;
-  border: none;
-  padding: 15px 32px;
-  background-color: darkcyan;
-  border-radius: 8px;
+.location-container {
+  background-color: rgba(255, 255, 255, 0.914);
+  border-radius: 6px;
+  grid-row-end: span 1;
   text-align: center;
 }
 
-.button-wind {
-  position: absolute;
-  top: 55%;
-  left: 30%;
-
-  color: aliceblue;
-  border: none;
-  padding: 15px 32px;
-  background-color: darkcyan;
-  border-radius: 8px;
+.wind-container {
+  background-color: rgba(255, 255, 255, 0.914);
+  border-radius: 6px;
+  grid-row-end: span 1;
   text-align: center;
+}
+
+.blade-container {
+  background-color: rgba(255, 255, 255, 0.914);
+  border-radius: 6px;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.saving-container {
+  background-color: rgba(255, 255, 255, 0.914);
+  border-radius: 6px;
+  grid-row-end: span 1;
+  text-align: center;
+}
+
+.calculate-button {
+  grid-column-end: span 4;
+  background-image: linear-gradient(
+    to right,
+    rgb(29, 114, 121),
+    rgb(61, 164, 228)
+  );
+  border-radius: 6px;
+}
+
+.location-button {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+  font-size: 10px;
+  padding: 15px 32px;
+}
+
+.location-button:hover {
+  -webkit-filter: brightness(90%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.windspeed-button {
+  margin-top: 10px;
+  margin-bottom: 17px;
+  border-radius: 6px;
+  border: 1px solid skyblue;
+  font-size: 10px;
+  padding: 15px 32px;
+}
+
+.windspeed-button:hover {
+  -webkit-filter: brightness(90%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.turbine-bladesize-text {
+  margin-top: 20px;
 }
 
 .form-inputs {
   text-align: center;
-
+  margin-top: 30px;
   border-radius: 8px;
-  border: 2px;
-  border-color: black;
-  padding: 10px 10px;
-
-  width: 50%;
-}
-
-.button-power {
-  position: absolute;
-  top: 90%;
-  left: 37%;
-
-  color: aliceblue;
-  border: none;
-  padding: 15px 32px;
-  background-color: darkcyan;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.calculator-description {
-  text-align: center;
-  -webkit-text-stroke: 0.5px darkgray;
-  border: 1px;
-  color: white;
-  font-size: 45px;
-}
-
-.description-position {
-  position: absolute;
-  width: 50%;
-  top: 40px;
-}
-.wind_button {
-  position: absolute;
-  top: 42%;
-  left: 67%;
-  color: aliceblue;
-  border: none;
-  border-radius: 6px;
-  padding: 4px 32px;
-  background-image: linear-gradient(
-    to right,
-    rgb(169, 230, 236),
-    rgb(61, 164, 228)
-  );
-
-  text-align: center;
+  border: 1px solid skyblue;
   font-size: 15px;
+  padding: 4px;
 }
 
-.savings_button {
-  position: absolute;
-  top: 88%;
-  left: 66%;
-  color: aliceblue;
-  border: none;
-  border-radius: 6px;
-  padding: 4px 32px;
-  background-image: linear-gradient(
-    to right,
-    rgb(169, 230, 236),
-    rgb(61, 164, 228)
-  );
+.saving-title-text {
+  margin-top: 20px;
+}
+.saving-value {
+  margin-top: 20px;
+}
 
+.calculate-savings-button {
+  padding: 8px 321px;
   text-align: center;
-  font-size: 15px;
+  background-color: transparent;
+  color: azure;
+
+  border: none;
+}
+
+.calculate-button:hover {
+  -webkit-filter: brightness(93%);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
