@@ -2,6 +2,9 @@ import React from 'react';
 import {Pie} from '@ant-design/plots';
 import {annualEnergy, gridUsage} from "../../../util";
 
+
+//the chart takes the calculations functions from utils and the data from the user input using context hook
+
 const SelfSufficiencyChart = ({info}) => {
     const solar = info && annualEnergy(info.panelArea, info.irradiation)
     const grid = info && gridUsage(info.electricityRate, info.monthlyBill, info.panelArea, info.irradiation)

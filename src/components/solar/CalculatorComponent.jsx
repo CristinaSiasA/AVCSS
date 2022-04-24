@@ -78,7 +78,8 @@ const CalculatorComponent = () => {
                 <div className="container p-5 rounded wrapper">
                     <div className="CalculatorTop">
                         <h1 className="text-white">Solar Savings Calculator</h1>
-                        <p className="text-center text-white py-3 px-5">Estimate the annual electricity bill savings and payback period for an investment in a domestic solar PV system using this simple calculator. <br/> Select the fields and Click the button below to come up with an estimate.</p>
+                        <h5
+                            className="text-center text-white py-3 px-5">Estimate the annual electricity bill savings and payback period for an investment in a domestic solar PV system using this simple calculator.  Select the fields and Click the button below to come up with an estimate.</h5>
                     </div>
                     <div className="row justify-content-center">
                         <div className="col bg-white pt-4 pl-2 m-2 rounded">
@@ -204,7 +205,7 @@ const CalculatorComponent = () => {
                 </div>
             </div>
 
-
+            {/*show the components bellow when there is no error in the calculator, also the context.provider allows us to use the data from the calculator in this specific components.*/}
             {show && !error &&
             <CalculationContext.Provider value={calculationData}>
                 <ResultsArea/>

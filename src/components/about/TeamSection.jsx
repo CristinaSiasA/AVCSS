@@ -9,6 +9,9 @@ function TeamSection({title, subtitle, bannerId}) {
     const [id, setId] = useState(null)
     const [details, setDetails] = useState(null)
 
+
+    //call the external API
+
     useEffect(() => {
         fetch("https://5g9nne7sn6.execute-api.us-east-1.amazonaws.com/employees")
             .then(res => res.json())
@@ -35,6 +38,7 @@ function TeamSection({title, subtitle, bannerId}) {
                 </div>
 
                 <>
+
                     <Modal
                         style={{ top: 50 }}
                         visible={visible}
