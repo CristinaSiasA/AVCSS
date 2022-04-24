@@ -1,5 +1,6 @@
 import React from 'react';
 
+//this card with props will be reused to contain the data from the calculations.
 const EstimationCard = ({icon, title, data, unit}) => {
     return (
         <div className="col-lg-3 col-sm-6 mb-4">

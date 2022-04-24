@@ -9,6 +9,8 @@ import {
     totalPanelsCalculator,
 } from "../../../util";
 
+
+//the results are shown using context and displayed in the estimation card component
 function ResultsArea() {
     const data = useContext(CalculationContext);
     const annualConsumption = data && annualConsumptionCalculator(data.electricityRate,data.monthlyBill);

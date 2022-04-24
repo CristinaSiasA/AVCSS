@@ -1,3 +1,6 @@
+
+//here are all the calculations used in the solar calculator section
+
 export function annualConsumptionCalculator(electricityRate, monthlyBill) {
     if (electricityRate !== undefined && monthlyBill !== undefined) {
         let yearlyBill = (monthlyBill * 12)

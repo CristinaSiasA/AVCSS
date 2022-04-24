@@ -3,7 +3,7 @@ import Highcharts from 'highcharts'
 import BarChart from 'highcharts-react-official'
 import {annualConsumptionCalculator, annualEnergy} from "../../../util";
 
-
+//the barchart takes the calculations functions from utils and the data from the user input using context hook
 function BarChartEnergy({info}) {
     const annualConsumption = info && annualConsumptionCalculator(info.electricityRate, info.monthlyBill);
     const solar = info && annualEnergy(info.panelArea, info.irradiation)
