@@ -13,7 +13,7 @@ const CalculatorComponent = () => {
     const [locations, setLocations] = useState([]);
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('http://localhost:8080/irradiance');
+            const response = await fetch('https://5g9nne7sn6.execute-api.us-east-1.amazonaws.com/irradiance');
             const fetchedIrradiances = await response.json(response);
             setLocations(fetchedIrradiances);
         }
